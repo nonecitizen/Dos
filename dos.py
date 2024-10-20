@@ -50,7 +50,7 @@ async def dos(url, cnt_requests):
         await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
-    url = str(input())
+    url = str(input("Введите url: "))
     cnt_requests = int(input("Введите количество запросов: "))
     try:
         start_time = time.time()
